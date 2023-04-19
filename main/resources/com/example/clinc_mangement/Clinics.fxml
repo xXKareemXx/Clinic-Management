@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clinc_mangement.Clinics">
+    <children>
+        <Label layoutX="150.0" layoutY="19.0" prefHeight="54.0" prefWidth="126.0" text="Clinics">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="154.0" layoutY="179.0" text="Available Days">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="292.0" layoutY="183.0" text="Room Number">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="156.0" layoutY="113.0" text="Clinc Name">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <TextField fx:id="c_available_days" layoutX="150.0" layoutY="207.0" prefHeight="162.0" prefWidth="114.0" style="-fx-border-color: black;" />
+        <TextField fx:id="c_room_num" layoutX="287.0" layoutY="210.0" prefHeight="161.0" prefWidth="114.0" style="-fx-border-color: black;" />
+        <Button layoutX="471.0" layoutY="345.0" mnemonicParsing="false" onAction="#c_add" prefHeight="30.0" prefWidth="82.0" text="Search" textFill="#0ab495">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-9.0" mnemonicParsing="false" onAction="#dbnt" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Doctors" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-9.0" layoutY="39.0" mnemonicParsing="false" onAction="#pbnt" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Patients" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-9.0" layoutY="78.0" mnemonicParsing="false" onAction="#csbnt" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Costumer_Service" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-9.0" layoutY="125.0" mnemonicParsing="false" onAction="#abnt" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Appoinments" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-9.0" layoutY="173.0" mnemonicParsing="false" onAction="#phbnt" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Pharmacy" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-9.0" layoutY="217.0" mnemonicParsing="false" onAction="#ltbnt" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Lab_Test" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-9.0" layoutY="261.0" mnemonicParsing="false" onAction="#bdbnt" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Blood_Donation" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-9.0" layoutY="310.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: white;" text="Clinics">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-9.0" layoutY="354.0" mnemonicParsing="false" onAction="#lbnt" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Logout" textFill="#d72929">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <ImageView fx:id="imgClinics" fitHeight="160.0" fitWidth="200.0" layoutX="351.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../image/imgClinics.png" />
+            </image>
+        </ImageView>
+      <TextField fx:id="c_clinic_name" layoutX="156.0" layoutY="137.0" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: white; -fx-border-color: black;" />
+    </children>
+</AnchorPane>

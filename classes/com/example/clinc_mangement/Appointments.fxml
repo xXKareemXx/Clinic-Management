@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clinc_mangement.Appointments">
+    <children>
+        <Label layoutX="150.0" layoutY="35.0" prefHeight="54.0" prefWidth="194.0" text="Appointments">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+        </Label>
+        <Label layoutX="344.0" layoutY="170.0" text="Patient name">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="188.0" layoutY="244.0" text="Clinic">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="339.0" layoutY="244.0" text="Date">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="188.0" layoutY="170.0" text="Doctor Name">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <TextField fx:id="a_patname" layoutX="339.0" layoutY="203.0" prefHeight="18.0" prefWidth="114.0" style="-fx-border-color: black;" />
+        <TextField fx:id="a_clinic" layoutX="180.0" layoutY="274.0" prefHeight="18.0" prefWidth="114.0" style="-fx-border-color: black;" />
+        <TextField fx:id="a_docname" layoutX="180.0" layoutY="203.0" prefHeight="18.0" prefWidth="114.0" style="-fx-border-color: black;" />
+        <DatePicker fx:id="a_date" layoutX="339.0" layoutY="274.0" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: white; -fx-border-color: black;" />
+        <Button layoutX="496.0" layoutY="355.0" mnemonicParsing="false" onAction="#a_add" prefHeight="30.0" prefWidth="61.0" text="ADD" textFill="#0ab495">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-10.0" mnemonicParsing="false" onAction="#dbnt" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Doctors" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-10.0" layoutY="39.0" mnemonicParsing="false" onAction="#pbnt" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Patients" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-10.0" layoutY="78.0" mnemonicParsing="false" onAction="#csbnt" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Costumer_Service" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-10.0" layoutY="125.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: white;" text="Appoinments">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-10.0" layoutY="173.0" mnemonicParsing="false" onAction="#phbnt" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Pharmacy" textFill="#fcfcfc">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-10.0" layoutY="217.0" mnemonicParsing="false" onAction="#ltbnt" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Lab_Test" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-10.0" layoutY="261.0" mnemonicParsing="false" onAction="#bdbnt" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Blood_Donation" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-10.0" layoutY="310.0" mnemonicParsing="false" onAction="#cbnt" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Clinics" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="-10.0" layoutY="354.0" mnemonicParsing="false" onAction="#lbnt" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Logout" textFill="#d72929">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+      <ImageView fx:id="imgAppointments" fitHeight="150.0" fitWidth="200.0" layoutX="382.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../image/imgAppointments.jpeg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

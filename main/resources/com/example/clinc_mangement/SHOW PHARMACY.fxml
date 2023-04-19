@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="409.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView prefHeight="200.0" prefWidth="409.0">
+         <columns>
+            <TableColumn prefWidth="119.20001220703125" text="Medicine Name" />
+            <TableColumn prefWidth="111.20001220703125" text="For What Disease" />
+            <TableColumn prefWidth="128.79998779296875" text="Medicine Expiry Date" />
+            <TableColumn prefWidth="49.60003662109375" text="Cost" />
+         </columns>
+      </TableView>
+      <Button layoutX="51.0" layoutY="273.0" mnemonicParsing="false" text="Delete" textFill="#0ab495">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="256.0" layoutY="273.0" mnemonicParsing="false" text="Refresh" textFill="#0ab495">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

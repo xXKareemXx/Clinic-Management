@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clinc_mangement.SHOWPATIENTS">
+   <children>
+      <TableView prefHeight="200.0" prefWidth="646.0">
+         <columns>
+            <TableColumn fx:id="pname" prefWidth="75.0" text="Name" />
+            <TableColumn prefWidth="61.60003662109375" text="Suffer" />
+            <TableColumn prefWidth="61.60003662109375" text="Age" />
+            <TableColumn prefWidth="95.20002746582031" text="Phone " />
+            <TableColumn prefWidth="82.40008544921875" text="Addres" />
+            <TableColumn prefWidth="47.20001220703125" text="Gender" />
+            <TableColumn prefWidth="68.79998779296875" text="Weight" />
+            <TableColumn prefWidth="70.4000244140625" text="Height" />
+            <TableColumn prefWidth="80.00006103515625" text="Payment" />
+         </columns>
+      </TableView>
+      <Button layoutX="37.0" layoutY="273.0" mnemonicParsing="false" text="Delete" textFill="#0ab495">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="161.0" layoutY="273.0" mnemonicParsing="false" text="Refresh" textFill="#0ab495">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

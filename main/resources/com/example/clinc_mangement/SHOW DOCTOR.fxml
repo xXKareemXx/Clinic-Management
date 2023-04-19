@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="329.0" prefWidth="542.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clinc_mangement.SHOWDOCTOR">
+   <children>
+      <TableView fx:id="table_doctor" prefHeight="200.0" prefWidth="542.0">
+         <columns>
+            <TableColumn fx:id="dname" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="did" prefWidth="61.60003662109375" text="ID" />
+            <TableColumn fx:id="dage" prefWidth="61.60003662109375" text="Age" />
+            <TableColumn fx:id="dphone" prefWidth="61.60003662109375" text="Phone " />
+            <TableColumn fx:id="daddress" prefWidth="61.60003662109375" text="Addres" />
+            <TableColumn fx:id="dexperience" prefWidth="67.20001220703125" text="Experience" />
+            <TableColumn fx:id="dsalary" prefWidth="72.79998779296875" text="Salary" />
+            <TableColumn fx:id="dspecialist" prefWidth="75.19997558593752" text="Specialist" />
+         </columns>
+      </TableView>
+      <Button layoutX="37.0" layoutY="273.0" mnemonicParsing="false" onAction="#ddelete" text="Delete" textFill="#0ab495">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="161.0" layoutY="273.0" mnemonicParsing="false" onAction="#drefresh" text="Refresh" textFill="#0ab495">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

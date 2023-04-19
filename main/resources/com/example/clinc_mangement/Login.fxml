@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="401.0" prefWidth="504.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clinc_mangement.Login">
+   <children>
+      <ImageView fx:id="imgLogin" fitHeight="457.0" fitWidth="504.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../image/imgLogin.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="388.0" layoutY="361.0" mnemonicParsing="false" onAction="#dbnt" text="LOGIN" textFill="#d72929">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="L_position" layoutX="114.0" layoutY="291.0" prefHeight="26.0" prefWidth="131.0" />
+      <TextField fx:id="L_username" layoutX="114.0" layoutY="328.0" prefHeight="26.0" prefWidth="131.0" />
+      <TextField fx:id="L_password" layoutX="114.0" layoutY="364.0" prefHeight="26.0" prefWidth="131.0" />
+      <Label layoutX="110.0" layoutY="29.0" text="Clinic Management">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="294.0" text="Position">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="331.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="367.0" text="Password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

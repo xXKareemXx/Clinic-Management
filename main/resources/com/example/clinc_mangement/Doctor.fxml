@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clinc_mangement.Doctor">
+    <children>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <Label layoutX="165.0" layoutY="23.0" prefHeight="54.0" prefWidth="124.0" text="Doctor">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <Label layoutX="294.0" layoutY="98.0" text="ID">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="169.0" layoutY="152.0" text="Age">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="293.0" layoutY="152.0" text="Phone">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="170.0" layoutY="208.0" text="Specialist">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="294.0" layoutY="210.0" text="Salary Per Day">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="166.0" layoutY="269.0" text="Experience">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="291.0" layoutY="269.0" text="Addres">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="170.0" layoutY="98.0" text="Doctor Name">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Button layoutX="393.0" layoutY="348.0" mnemonicParsing="false" onAction="#b_add" prefHeight="30.0" prefWidth="61.0" text="ADD" textFill="#0ab495">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="483.0" layoutY="348.0" mnemonicParsing="false" onAction="#b_clear" text="CLEAR" textFill="#0ab495">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="d_name" layoutX="170.0" layoutY="118.0" prefHeight="18.0" prefWidth="114.0" style="-fx-border-color: black;" />
+                <TextField fx:id="d_id" layoutX="293.0" layoutY="118.0" prefHeight="18.0" prefWidth="114.0" style="-fx-border-color: black;" />
+                <TextField fx:id="d_age" layoutX="170.0" layoutY="173.0" prefHeight="18.0" prefWidth="114.0" style="-fx-border-color: black;" />
+                <TextField fx:id="d_phone" layoutX="293.0" layoutY="173.0" prefHeight="18.0" prefWidth="114.0" style="-fx-border-color: black;" />
+                <TextField fx:id="d_spec" layoutX="168.0" layoutY="230.0" prefHeight="18.0" prefWidth="114.0" style="-fx-border-color: black;" />
+                <TextField fx:id="d_salary" layoutX="293.0" layoutY="230.0" prefHeight="18.0" prefWidth="114.0" style="-fx-border-color: black;" />
+                <TextField fx:id="d_work" layoutX="417.0" layoutY="230.0" prefHeight="18.0" prefWidth="114.0" style="-fx-border-color: black;" />
+                <TextField fx:id="d_exp" layoutX="168.0" layoutY="288.0" prefHeight="18.0" prefWidth="114.0" style="-fx-border-color: black;" />
+                <TextField fx:id="d_add" layoutX="291.0" layoutY="288.0" prefHeight="18.0" prefWidth="114.0" style="-fx-border-color: black;" />
+                <Label layoutX="417.0" layoutY="208.0" text="Days of Work">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Button layoutX="-11.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: white;" text="Doctors">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="-11.0" layoutY="39.0" mnemonicParsing="false" onAction="#pbnt" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Patients" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="-11.0" layoutY="78.0" mnemonicParsing="false" onAction="#csbnt" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Costumer_Service" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="-11.0" layoutY="125.0" mnemonicParsing="false" onAction="#abnt" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Appoinments" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="-11.0" layoutY="173.0" mnemonicParsing="false" onAction="#phbnt" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Pharmacy" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="-11.0" layoutY="217.0" mnemonicParsing="false" onAction="#ltbnt" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Lab_Test" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="-11.0" layoutY="261.0" mnemonicParsing="false" onAction="#bdbnt" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Blood_Donation" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="-11.0" layoutY="310.0" mnemonicParsing="false" onAction="#cbnt" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Clinics" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="-11.0" layoutY="354.0" mnemonicParsing="false" onAction="#lbnt" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: #0ab495;" text="Logout" textFill="#d72929">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+            <ImageView fx:id="imgDoctor" fitHeight="135.0" fitWidth="166.0" layoutX="417.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../image/imgDoctor.jpeg" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
